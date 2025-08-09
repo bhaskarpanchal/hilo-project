@@ -1,0 +1,13 @@
+<div *ngIf="user as u" class="profile">
+  <header class="header">
+    <img class="avatar" [src]="u.avatarUrl" [alt]="u.username" />
+    <div class="info">
+      <div class="username">{{ u.username }}</div>
+      <div class="name">{{ u.fullName }}</div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <img *ngFor="let p of posts" [src]="p.imageUrl" alt="post image" />
+  </div>
+</div>

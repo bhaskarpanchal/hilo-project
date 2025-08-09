@@ -1,0 +1,6 @@
+<div class="stories">
+  <div class="story" *ngFor="let s of stories">
+    <img [src]="s.user.avatarUrl" [alt]="s.user.username" />
+    <span [ngClass]="{ seen: s.seen }">{{ s.user.username }}</span>
+  </div>
+</div>

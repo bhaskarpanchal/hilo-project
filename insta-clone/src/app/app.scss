@@ -1,0 +1,9 @@
+body, :host, .container {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
