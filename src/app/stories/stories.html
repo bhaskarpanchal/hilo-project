@@ -1,0 +1,10 @@
+<div class="stories-wrapper">
+    @for (s of stories; track $index) {
+    <div class="story">
+      <div class="story-avatar-wrapper">
+        <img [src]="s.avatar" [alt]="s.name" />
+      </div>
+      <span>{{ s.name }}</span>
+    </div>
+    }
+</div>

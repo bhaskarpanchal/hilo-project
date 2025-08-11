@@ -1,0 +1,36 @@
+<div class="feed">
+  @for (p of posts; track $index) {
+  <div class="post">
+    <div class="post-header">
+      <img class="avatar" [src]="p.avatar" [alt]="p.user" />
+      <div class="user-info">
+        <span class="username">{{ p.user }}</span>
+        <span class="time">{{ p.time }}</span>
+      </div>
+      <button class="options-btn">...</button>
+    </div>
+    <img class="post-image" [src]="p.image" alt="post" />
+    <div class="post-actions">
+      <div class="main-actions">
+        <button><i class="ri-heart-line"></i></button>
+        <button><i class="ri-chat-3-line"></i></button>
+        <button><i class="ri-share-forward-line"></i></button>
+      </div>
+      <button class="bookmark-btn"><i class="ri-bookmark-line"></i></button>
+    </div>
+    <div class="likes">
+      <span>1,234 likes</span>
+    </div>
+    <div class="caption">
+      <b>{{ p.user }}</b> {{ p.caption }}
+    </div>
+    <div class="comments">
+      <span>View all 12 comments</span>
+      <div class="add-comment">
+        <input type="text" placeholder="Add a comment..." />
+        <button>Post</button>
+      </div>
+    </div>
+  </div>
+  }
+</div>

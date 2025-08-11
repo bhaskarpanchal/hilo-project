@@ -1,0 +1,46 @@
+<div class="suggestions-container">
+  <div class="user-profile">
+    <img [src]="profile.avatar" alt="User Avatar" class="avatar">
+    <div class="user-info">
+      <span class="username">{{ profile.handle }}</span>
+      <span class="name">{{ profile.name }}</span>
+    </div>
+    <button class="switch-btn">Switch</button>
+  </div>
+
+  <div class="suggestions-header">
+    <span>Suggested for you</span>
+    <a href="#" class="see-all">See All</a>
+  </div>
+
+  <div class="suggestions-list">
+    @for (user of suggestions; track $index) {
+    <div class="suggestion-item">
+      <img [src]="user.avatar" alt="User Avatar" class="avatar">
+      <div class="user-info">
+        <span class="username">{{ user.handle }}</span>
+        <span class="followed-by">{{ user.followedBy }}</span>
+      </div>
+      <button class="follow-btn">Follow</button>
+    </div>
+    }
+  </div>
+
+  <div class="footer">
+    <div class="links">
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Press</a>
+      <a href="#">API</a>
+      <a href="#">Jobs</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Locations</a>
+      <a href="#">Language</a>
+      <a href="#">Meta Verified</a>
+    </div>
+    <div class="copyright">
+      © 2025 INSTAGRAM FROM META
+    </div>
+  </div>
+</div>

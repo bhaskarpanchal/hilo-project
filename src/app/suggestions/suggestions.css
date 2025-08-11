@@ -1,0 +1,78 @@
+.suggestions-container {
+  width: 320px;
+  padding: 20px;
+  color: #a8a8a8;
+}
+
+.user-profile,
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.username {
+  font-weight: 600;
+  color: #f5f5f5;
+  display: block;
+  font-size: 13px;
+}
+
+.name,
+.followed-by {
+  font-size: 12px;
+}
+
+.switch-btn,
+.follow-btn {
+  background: none;
+  border: none;
+  color: #006bde;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.suggestions-header span {
+  font-weight: 600;
+}
+
+.see-all {
+  color: #f5f5f5;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 11px;
+}
+
+.links a {
+  color: #a8a8a8;
+  text-decoration: none;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.copyright {
+  margin-top: 15px;
+}
